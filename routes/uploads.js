@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
   res.end();
 });
 
-router.post('/', upload.single('resumeFile'), function(req, res) {
+router.post('/', upload.single('resumeFile'), function(req, res) { //resumeFile : Upload control's name
   console.log('Uploaded File Details are Here', req.file);
   inMemStream = {
       mimetype: req.file.mimetype,
