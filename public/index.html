@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <h1>Node JS - Simple File Upload and Download</h1>
+    <p>This sample app uploads a file to NodeJS. The app stores the uploaded file in a memory object. You can change to store it in a path or a database.</p>
+    <div>
+    <form action="/uploadFile" method="post" enctype="multipart/form-data">
+      <input type="file" name="resumeFile"></input>
+      <input type="submit" value="Upload"></input>
+    </form>
+    </div>
+    <div id="downloadDiv">
+      <a href="/uploadFile">Download Uploaded Document</a>
+    </div>
+    <script type="text/javascript">
+    
+    </script>
+  </body>
+</html>
